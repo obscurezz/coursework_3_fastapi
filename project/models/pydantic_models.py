@@ -29,6 +29,9 @@ class MovieModel(BaseModel):
     genre_id: int
     director_id: int
 
+    Genre: GenreModel | None
+    Director: DirectorModel | None
+
     class Config:
         orm_mode = True
 
